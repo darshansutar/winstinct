@@ -3,30 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Winstinct Roster</title>
+<title>Artists & Labels — Winstinct (Big W) Roster</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Artists and labels that release with Winstinct.">
+<meta name="description" content="Independent voices and distinctive sounds across hip-hop and emerging music cultures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Noto+Sans+Display:wdth,wght@62.5..100,700..900&display=swap">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="top">
-<header class="site-header ">
+
+<header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="index.html" aria-label="Winstinct home">winstinct<span class="logo-dot" aria-hidden="true"></span></a>
     <nav class="main-nav" aria-label="Main">
       <ul class="nav-col">
-        <li><a href="about.html">About</a></li>
-        <li><a href="news.html">News</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="services.html" >What We Do</a></li>
+        <li><a href="work.html" >Our Work</a></li>
       </ul>
       <ul class="nav-col">
         <li><a href="artists.html" aria-current="page">Artists &amp; Labels</a></li>
-        <li><a href="services.html">What we do</a></li>
+        <li><a href="news.html" >Insights &amp; News</a></li>
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-sm" href="contact.html">Join us</a>
+      <a class="btn btn-sm" href="contact.html">Submit Your Music</a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu-overlay"><span></span><span></span><span class="sr-only">Open menu</span></button>
     </div>
   </div>
@@ -40,137 +42,239 @@
     </div>
     <nav class="menu-links" aria-label="Mobile">
       <a href="about.html">About</a>
-      <a href="news.html">News</a>
+      <a href="services.html">What We Do</a>
+      <a href="work.html">Our Work</a>
       <a href="artists.html">Artists &amp; Labels</a>
-      <a href="services.html">What we do</a>
-      <a href="contact.html">Join us</a>
+      <a href="news.html">Insights &amp; News</a>
+      <a href="contact.html">Submit Your Music / Contact</a>
     </nav>
   </div>
 </div>
-
 <main>
 
 <section class="page-hero band-cream">
   <div class="wrap">
     <p class="eyebrow">Artists &amp; Labels</p>
-    <h1 class="t-mega">Who we<br>work with</h1>
-    <p class="lead">Over 900 labels and artists across every genre release with Winstinct. Here are a few of them.</p>
+    <h1 class="t-mega">Independent Voices.<br>Distinctive Sounds.</h1>
+    <p class="lead">We work with artists, producers and independent labels across the evolving music landscape, with a strong connection to hip-hop and emerging music cultures. Our roster represents different sounds, stories and ambitions — united by the drive to create independently.</p>
+    <div class="btn-row" style="margin-top:28px">
+      <a class="btn btn-solid" href="#roster-section">Explore Our Roster</a>
+      <a class="btn" href="contact.html">Partner With Us</a>
+    </div>
   </div>
 </section>
 
-<section class="band band-cream" style="padding-top:0" aria-label="Roster">
+<!-- Roster Grid with Filter -->
+<section class="band band-cream" id="roster-section" style="padding-top:0" aria-label="Roster Section">
   <div class="wrap">
-    <div class="filters" role="group" aria-label="Filter roster">
+    
+    <div class="filters" role="group" aria-label="Filter roster by type">
       <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
       <button class="filter" type="button" data-filter="artist" aria-pressed="false">Artists</button>
+      <button class="filter" type="button" data-filter="producer" aria-pressed="false">Producers</button>
       <button class="filter" type="button" data-filter="label" aria-pressed="false">Labels</button>
     </div>
-    <div class="roster-grid">
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Placeholder: Aurel Moss" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>Aurel Moss</h3>
-        <span class="meta"><span>Indie folk</span><span>Lisbon</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-2.svg" alt="Placeholder: Hollow Pine" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Hollow Pine</h3>
-        <span class="meta"><span>Ambient</span><span>Oslo</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-3.svg" alt="Placeholder: Cassia Lane" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>Cassia Lane</h3>
-        <span class="meta"><span>Soul</span><span>Atlanta</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-4.svg" alt="Placeholder: Tidal Room" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Tidal Room</h3>
-        <span class="meta"><span>House</span><span>Amsterdam</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Placeholder: Dune Theory" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>Dune Theory</h3>
-        <span class="meta"><span>Electronic</span><span>Berlin</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-2.svg" alt="Placeholder: Kestrel Records" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Kestrel Records</h3>
-        <span class="meta"><span>Rock</span><span>Leeds</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-3.svg" alt="Placeholder: Halo Wren" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>Halo Wren</h3>
-        <span class="meta"><span>Dream pop</span><span>Montréal</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-4.svg" alt="Placeholder: Okra Sound" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Okra Sound</h3>
-        <span class="meta"><span>Afrobeats</span><span>Lagos</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Placeholder: June Atlas" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>June Atlas</h3>
-        <span class="meta"><span>Singer-songwriter</span><span>Melbourne</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-2.svg" alt="Placeholder: Meridian" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Meridian</h3>
-        <span class="meta"><span>Jazz</span><span>Paris</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="artist">
-        <figure class="ph" style="margin:0"><img src="assets/ph-3.svg" alt="Placeholder: Opal Static" loading="lazy"></figure>
-        <span class="tag tag-artist">Artist</span>
-        <h3>Opal Static</h3>
-        <span class="meta"><span>Synth-pop</span><span>Seoul</span></span>
-      </a>
-      <a class="roster-card" href="#" data-type="label">
-        <figure class="ph" style="margin:0"><img src="assets/ph-4.svg" alt="Placeholder: Copperline" loading="lazy"></figure>
-        <span class="tag tag-label">Label</span>
-        <h3>Copperline</h3>
-        <span class="meta"><span>Hip-hop</span><span>Detroit</span></span>
-      </a>
+
+    <div class="card-grid">
+
+      <!-- Profile 1 -->
+      <article class="artist-card" data-type="artist">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-1.svg" alt="Kaelen Vance" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-artist">Artist</span>
+            <h3>Kaelen Vance</h3>
+            <span class="muted" style="font-size:0.85rem">Hip-Hop / Drill · London &amp; Toronto</span>
+          </div>
+        </div>
+        <p class="artist-bio">Gritty lyricism meets cinematic drill soundscapes. Kaelen has carved out a singular lane in independent hip-hop, bridging transatlantic underground sounds with mainstream appeal.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Crown &amp; Concrete" LP (2026)</strong> · Singles: "Cold Front", "Ghost Town"</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">24M+ global streams · Featured on Spotify's Rap UK &amp; Fresh Finds · 100% master ownership retained</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="Kaelen Vance on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="Kaelen Vance on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="Kaelen Vance on Instagram">Instagram</a>
+        </div>
+      </article>
+
+      <!-- Profile 2 -->
+      <article class="artist-card" data-type="artist">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-2.svg" alt="Reya Sol" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-artist">Artist</span>
+            <h3>Reya Sol</h3>
+            <span class="muted" style="font-size:0.85rem">Alternative R&amp;B / Afro-Fusion · Lagos &amp; London</span>
+          </div>
+        </div>
+        <p class="artist-bio">Fusing sultry alternative R&amp;B harmonies with infectious West African percussion and hip-hop bounce, Reya creates hypnotic sonic worlds that resonate internationally.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Golden Hour" EP (2026)</strong> · Singles: "Mirage", "Siren Call"</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">12M+ streams · Major sync placement in Netflix drama · Sold-out headline club tour in 5 European cities</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="Reya Sol on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="Reya Sol on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="Reya Sol on Instagram">Instagram</a>
+        </div>
+      </article>
+
+      <!-- Profile 3 -->
+      <article class="artist-card" data-type="producer">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-3.svg" alt="Southside Wave" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-label">Producer</span>
+            <h3>Southside Wave</h3>
+            <span class="muted" style="font-size:0.85rem">Trap &amp; Melodic Drill · Atlanta</span>
+          </div>
+        </div>
+        <p class="artist-bio">Prolific production duo engineering modern trap textures, thunderous 808s and emotive sample flips. Behind some of the hardest-hitting anthems in the independent circuit.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Wave Theory Vol. 2" (2026)</strong> · Producer cuts for multi-platinum releases</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">85M+ catalog streams · Official sync partner for ESPN broadcast &amp; 2K Games · Multi-territory publishing administration</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="Southside Wave on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="Southside Wave on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="Southside Wave on Instagram">Instagram</a>
+        </div>
+      </article>
+
+      <!-- Profile 4 -->
+      <article class="artist-card" data-type="label">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-4.svg" alt="North District Records" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-label">Label</span>
+            <h3>North District Records</h3>
+            <span class="muted" style="font-size:0.85rem">Independent Hip-Hop Label · Montréal &amp; New York</span>
+          </div>
+        </div>
+        <p class="artist-bio">Boutique independent label home to uncompromising lyricists, beatmakers and visual creators. Committed to artist development and full catalogue autonomy.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Northern Heights Compilation" (2026)</strong> · 8 single campaigns delivered</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">65M+ collective streams across 8 roster acts · Partnered with Winstinct for 150+ DSP distribution &amp; global publishing</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="North District on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="North District on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="North District on Instagram">Instagram</a>
+        </div>
+      </article>
+
+      <!-- Profile 5 -->
+      <article class="artist-card" data-type="artist">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-1.svg" alt="Tariq Malik" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-artist">Artist</span>
+            <h3>Tariq Malik</h3>
+            <span class="muted" style="font-size:0.85rem">Conscious Hip-Hop / Jazz-Rap · Chicago</span>
+          </div>
+        </div>
+        <p class="artist-bio">Intricate rhyme schemes, live jazz instrumentation and sharp cultural commentary. Tariq bridges golden-era lyrical discipline with forward-thinking independent vision.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Blueprints for Tomorrow" (2026)</strong> · Single: "Cornerstone"</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">9.5M streams · NPR Tiny Desk feature submission spotlight · Extensive festival appearances</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="Tariq Malik on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="Tariq Malik on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="Tariq Malik on Instagram">Instagram</a>
+        </div>
+      </article>
+
+      <!-- Profile 6 -->
+      <article class="artist-card" data-type="producer">
+        <div class="artist-header">
+          <figure class="artist-avatar"><img src="assets/ph-group.svg" alt="Nova Soundworks" loading="lazy"></figure>
+          <div class="artist-info">
+            <span class="tag tag-label">Producer</span>
+            <h3>Nova Soundworks</h3>
+            <span class="muted" style="font-size:0.85rem">Electronic Drill / Synth-Trap · Seoul &amp; Los Angeles</span>
+          </div>
+        </div>
+        <p class="artist-bio">Visionary sound design collective blending analog synthesizers, sharp drill cadence and bass-heavy mixdowns, collaborating with boundary-pushing vocalists worldwide.</p>
+        <div class="artist-section">
+          <span class="artist-section-title">Latest Releases</span>
+          <p class="artist-section-content"><strong>"Neon District Instrumentals" (2026)</strong> · Co-production on UK #1 Indie single</p>
+        </div>
+        <div class="artist-section">
+          <span class="artist-section-title">Selected Achievements</span>
+          <p class="artist-section-content">30M+ total platform streams · Global sync placements across gaming and streetwear commercial campaigns</p>
+        </div>
+        <div class="artist-links">
+          <a class="artist-link" href="#" aria-label="Nova Soundworks on Spotify">Spotify</a>
+          <a class="artist-link" href="#" aria-label="Nova Soundworks on YouTube">YouTube</a>
+          <a class="artist-link" href="#" aria-label="Nova Soundworks on Instagram">Instagram</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<section class="band band-orange" aria-labelledby="join-title">
+<!-- CTA -->
+<section class="band band-orange" aria-labelledby="join-roster-title">
   <div class="wrap cta-band">
-    <h2 id="join-title" class="t-l">Want to release<br>with us?</h2>
-    <a class="btn" href="contact.html">Get in touch</a>
+    <div>
+      <h2 id="join-roster-title" class="t-l">Partner With Us.</h2>
+      <p class="lead" style="margin-top:12px">Are you an independent artist, producer or label ready to take your music to the next level without giving up your masters?</p>
+    </div>
+    <a class="btn btn-solid" href="contact.html">Submit Your Music</a>
   </div>
 </section>
+
 </main>
 
 <footer class="site-footer band-ink">
   <div class="wrap">
     <div class="footer-top">
-      <ul class="footer-big">
-        <li><a href="contact.html">Careers</a></li>
-        <li><a href="about.html">Brand assets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div>
+        <p class="eyebrow" style="color:var(--orange);margin-bottom:14px">Our Core Services</p>
+        <ul class="footer-big">
+          <li><a href="services.html#distribution">Distribution</a></li>
+          <li><a href="services.html#publishing">Publishing</a></li>
+          <li><a href="services.html#marketing">Marketing</a></li>
+          <li><a href="services.html#content">Content</a></li>
+          <li><a href="services.html#artist-development">Artist Development</a></li>
+        </ul>
+      </div>
       <a class="to-top" href="#top" aria-label="Back to top">↑</a>
     </div>
     <div class="footer-bottom">
       <div class="footer-brand">
         <a class="logo" href="index.html" aria-label="Winstinct home">winstinct<span class="logo-dot" aria-hidden="true"></span></a>
-        <p class="tagline">Independent<br>by design</p>
+        <p class="tagline"><strong>Big W</strong><br>Independent Music.<br>Artist-First Partnerships.</p>
       </div>
       <span aria-hidden="true"></span>
       <ul class="legal">
-        <li><a href="#">Legal notice</a></li>
-        <li><a href="#">Privacy policy</a></li>
-        <li><a href="#">Winstinct Studio platform</a></li>
-        <li><a href="#">Our position on AI</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
       </ul>
       <ul class="social" aria-label="Social links">
         <li><a href="#" aria-label="Instagram">IG</a></li>
@@ -180,7 +284,6 @@
     </div>
   </div>
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>

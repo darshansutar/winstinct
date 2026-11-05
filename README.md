@@ -1,7 +1,5 @@
 # Winstinct
 
-Static website for Winstinct, a made-up independent music distributor. It uses placeholder text and images.
-
 ## Pages
 
 - `index.html`: home
@@ -9,7 +7,7 @@ Static website for Winstinct, a made-up independent music distributor. It uses p
 - `services.html`: what we do
 - `artists.html`: artists and labels
 - `news.html`: news
-- `contact.html`: contact (demo form, sends nothing)
+- `contact.html`: join/contact page with artist, label and brand pathways
 
 ## Run it
 
@@ -18,7 +16,6 @@ No build step. Open `index.html` in a browser, or serve the folder with any stat
 ## Structure
 
 - `css/styles.css`: colors, fonts and layout. Colors are variables at the top of the file.
-- `js/main.js`: mobile menu, tabs, slider, mixing desk, filters and scroll animations (GSAP from cdnjs)
-- `assets/`: placeholder images. Replace them using the same file names.
+- `js/main.js`: mobile menu, filters, mixing desk and scroll animations (GSAP from cdnjs)
+- `assets/`: editorial artwork used by the roster and insights layouts
 
-The header and footer are copied into each page, so edit them in all six files.

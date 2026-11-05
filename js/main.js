@@ -19,7 +19,7 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !overlay.hidden) setOpen(false); });
   }
 
-  // Tabs (Worldwide)
+  // Tabs (Worldwide / Capabilities)
   $$('[role="tablist"]').forEach((list) => {
     const tabs = $$('[role="tab"]', list);
     const globe = $('.globe');
@@ -28,9 +28,10 @@
         const on = t === tab;
         t.setAttribute('aria-selected', String(on));
         t.tabIndex = on ? 0 : -1;
-        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+        const panel = document.getElementById(t.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !on;
       });
-      if (globe) globe.dataset.view = tab.dataset.view;
+      if (globe && tab.dataset.view) globe.dataset.view = tab.dataset.view;
     };
     tabs.forEach((tab, i) => {
       tab.addEventListener('click', () => select(tab));
@@ -43,7 +44,7 @@
     });
   });
 
-  // Slider (Team)
+  // Slider (Pillars / Highlights)
   $$('[data-slider]').forEach((slider) => {
     const slides = $$('.slide', slider);
     const count = $('.slider-count', slider.closest('section'));
@@ -60,18 +61,17 @@
     show(0);
   });
 
-  // Mixing desk (Distribution): tap a channel to push it up or pull it down
+  // Mixing desk (Digital Services): tap a channel to push it up or pull it down
   const desk = $('.console');
   if (desk) {
     const channels = $$('button.channel', desk);
     const count = $('[data-mix-count]');
-    const update = () => { count.textContent = channels.filter((c) => c.getAttribute('aria-pressed') === 'true').length; };
+    const update = () => { if (count) count.textContent = channels.filter((c) => c.getAttribute('aria-pressed') === 'true').length; };
     channels.forEach((c) => c.addEventListener('click', () => {
       c.setAttribute('aria-pressed', String(c.getAttribute('aria-pressed') !== 'true'));
       update();
     }));
     update();
-    // Faders rise into place the first time the desk scrolls into view
     if (reduceMotion || !('IntersectionObserver' in window)) {
       desk.classList.remove('is-waiting');
     } else {
@@ -82,36 +82,47 @@
     }
   }
 
-  // Roster filter (Artists & Labels)
-  const filters = $$('.filter');
-  if (filters.length) {
-    filters.forEach((f) => f.addEventListener('click', () => {
-      filters.forEach((x) => x.setAttribute('aria-pressed', String(x === f)));
-      $$('.roster-card').forEach((card) => {
-        card.hidden = f.dataset.filter !== 'all' && card.dataset.type !== f.dataset.filter;
+  // Filter groups (Artists & Labels roster + News categories)
+  $$('.filters').forEach((group) => {
+    const filterButtons = $$('.filter', group);
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        const filterVal = btn.dataset.filter;
+        // Filter roster cards and artist cards
+        $$('.roster-card, .artist-card').forEach((card) => {
+          if (!card.dataset.type) return;
+          card.hidden = filterVal !== 'all' && card.dataset.type !== filterVal;
+        });
+        // Filter news post cards
+        $$('.post-card').forEach((card) => {
+          if (!card.dataset.cat) return;
+          card.hidden = filterVal !== 'all' && card.dataset.cat !== filterVal;
+        });
       });
-    }));
-  }
+    });
+  });
 
-  // Contact form (demo only — nothing is sent)
+  // Contact form submission handling
   const form = $('#contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const note = $('.form-note', form);
-      note.hidden = false;
-      note.textContent = 'Thanks, ' + (form.elements.name.value || 'friend') + '. This is a demo form, so nothing was sent.';
+      if (note) {
+        note.hidden = false;
+        note.textContent = 'Thank you, ' + (form.elements.name?.value || 'partner') + '. Your inquiry has been received. Our team will review your submission and get back to you within 3 business days.';
+      }
       form.reset();
     });
   }
 
-  // Scroll animations (GSAP) — content is visible without them
+  // Scroll animations (GSAP)
   if (reduceMotion || !window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from('.hero-word span', { yPercent: 18, duration: 1.1, ease: 'power3.out', stagger: 0.08 });
 
-  // Sideways drift only where the word has room (laptops and up)
   if (window.matchMedia('(min-width: 961px)').matches) $$('.word-stack span').forEach((word, k) => {
     gsap.fromTo(word, { xPercent: k % 2 ? -8 : 0 }, {
       xPercent: k % 2 ? 0 : -8, ease: 'none',

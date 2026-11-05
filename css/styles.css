@@ -591,3 +591,85 @@ button.channel:hover { background: rgba(244, 241, 234, 0.11); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+
+/* ---------- Winstinct Content Additions (strictly preserving existing color theme) ---------- */
+.artist-card {
+  display: flex; flex-direction: column; gap: 16px;
+  padding: clamp(20px, 2.4vw, 32px);
+  border: 1.5px solid var(--line);
+  background: rgba(244, 241, 234, 0.4);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform .2s, border-color .2s;
+}
+.artist-card:hover { border-color: var(--ink); transform: translateY(-3px); }
+.artist-header { display: flex; gap: 18px; align-items: center; }
+.artist-avatar { width: 76px; height: 76px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background: var(--ink); }
+.artist-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.artist-info { display: flex; flex-direction: column; gap: 4px; }
+.artist-info h3 { font-size: var(--t-s); font-weight: 800; line-height: 1.15; }
+.artist-bio { font-size: 0.925rem; line-height: 1.55; color: var(--ink-soft); }
+.artist-section { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); padding-top: 12px; }
+.artist-section-title { font-size: var(--t-xs); font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink); }
+.artist-section-content { font-size: 0.875rem; color: var(--ink-soft); line-height: 1.45; }
+.artist-links { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 4px; }
+.artist-link { font-size: var(--t-xs); font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--cobalt); text-decoration: none; }
+.artist-link:hover { color: var(--orange); }
+
+.case-study {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 4.5vw, 72px);
+  padding-block: clamp(36px, 5vw, 64px);
+  border-top: 1.5px solid currentColor;
+}
+.case-study > * { min-width: 0; }
+.case-study-meta { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.case-badge {
+  display: inline-flex; align-items: center;
+  padding: 0.35em 0.85em; border-radius: var(--radius-pill);
+  font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--lime); color: var(--ink);
+}
+.band-cream .case-badge { background: var(--cobalt); color: var(--cream); }
+.case-title { font-size: var(--t-l); font-weight: 800; line-height: 1.05; letter-spacing: -0.025em; }
+.case-role { font-size: var(--t-s); font-weight: 700; color: var(--orange); }
+.case-study-details { display: flex; flex-direction: column; gap: 20px; }
+.case-field { display: flex; flex-direction: column; gap: 6px; }
+.case-field-title { font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; }
+.case-field-desc { font-size: 1.05rem; line-height: 1.55; }
+.case-results-box {
+  background: rgba(200, 245, 66, 0.14);
+  border-left: 4px solid var(--lime);
+  padding: 18px 22px;
+  border-radius: 0 10px 10px 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.band-cream .case-results-box {
+  background: rgba(45, 75, 255, 0.08);
+  border-left: 4px solid var(--cobalt);
+}
+.case-results-title { font-size: var(--t-xs); font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.band-cobalt .case-results-title { color: var(--lime); }
+.band-ink .case-results-title { color: var(--lime); }
+
+.audience-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2.5vw, 32px); }
+.audience-card {
+  display: flex; flex-direction: column; gap: 16px;
+  padding: clamp(24px, 3vw, 40px);
+  border-radius: 14px;
+  background: rgba(244, 241, 234, 0.06);
+  border: 1.5px solid var(--line-light);
+}
+.band-cream .audience-card {
+  background: var(--cream);
+  border: 1.5px solid var(--line);
+}
+.audience-card h3 { font-size: var(--t-m); font-weight: 800; line-height: 1.15; }
+.audience-card p { font-size: 1rem; line-height: 1.5; color: var(--cream); opacity: 0.88; }
+.band-cream .audience-card p { color: var(--ink-soft); opacity: 1; }
+.audience-card .btn { margin-top: auto; align-self: flex-start; }
+
+@media (max-width: 960px) {
+  .case-study { grid-template-columns: minmax(0, 1fr); }
+  .audience-grid { grid-template-columns: minmax(0, 1fr); }
+}

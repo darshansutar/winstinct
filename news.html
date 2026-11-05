@@ -3,30 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Winstinct News</title>
+<title>Insights & News — Winstinct (Big W)</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Release stories, industry notes and team updates.">
+<meta name="description" content="Notes from the independent music scene: artist stories, new releases, music business insights and company updates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Noto+Sans+Display:wdth,wght@62.5..100,700..900&display=swap">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="top">
-<header class="site-header ">
+
+<header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="index.html" aria-label="Winstinct home">winstinct<span class="logo-dot" aria-hidden="true"></span></a>
     <nav class="main-nav" aria-label="Main">
       <ul class="nav-col">
-        <li><a href="about.html">About</a></li>
-        <li><a href="news.html" aria-current="page">News</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="services.html" >What We Do</a></li>
+        <li><a href="work.html" >Our Work</a></li>
       </ul>
       <ul class="nav-col">
-        <li><a href="artists.html">Artists &amp; Labels</a></li>
-        <li><a href="services.html">What we do</a></li>
+        <li><a href="artists.html" >Artists &amp; Labels</a></li>
+        <li><a href="news.html" aria-current="page">Insights &amp; News</a></li>
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-sm" href="contact.html">Join us</a>
+      <a class="btn btn-sm" href="contact.html">Submit Your Music</a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu-overlay"><span></span><span></span><span class="sr-only">Open menu</span></button>
     </div>
   </div>
@@ -40,70 +42,146 @@
     </div>
     <nav class="menu-links" aria-label="Mobile">
       <a href="about.html">About</a>
-      <a href="news.html">News</a>
+      <a href="services.html">What We Do</a>
+      <a href="work.html">Our Work</a>
       <a href="artists.html">Artists &amp; Labels</a>
-      <a href="services.html">What we do</a>
-      <a href="contact.html">Join us</a>
+      <a href="news.html">Insights &amp; News</a>
+      <a href="contact.html">Submit Your Music / Contact</a>
     </nav>
   </div>
 </div>
-
 <main>
 
 <section class="page-hero band-cream">
   <div class="wrap">
-    <h1 class="t-mega">News</h1>
-    <p class="lead">Release stories, industry notes and updates from the team.</p>
+    <p class="eyebrow">Insights &amp; News</p>
+    <h1 class="t-mega">Notes From the<br>Independent Music Scene.</h1>
+    <p class="lead">Stories, perspectives and updates from the world of independent music.</p>
   </div>
 </section>
 
-<section class="band band-cream" style="padding-top:0" aria-label="Featured story">
+<!-- Category Filter -->
+<section class="band band-cream" style="padding-top:0" aria-label="News Categories">
   <div class="wrap">
-    <a class="featured" href="#">
-      <figure class="ph" style="margin:0"><img src="assets/ph-group.svg" alt="Placeholder: featured story image"></figure>
-      <div class="stack">
-        <p class="post-meta"><span class="cat">Company</span><span>Oct 21, 2026</span></p>
-        <h2 class="t-l">Winstinct opens a studio space for partners in Lagos</h2>
-        <p class="body-copy muted">Free recording and content days for artists on our roster, starting next month. Here is how to book a slot.</p>
-        <span class="link-arrow">Read the story</span>
-      </div>
-    </a>
+    <div class="filters" role="group" aria-label="Filter insights by category">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="artist-stories" aria-pressed="false">Artist Stories</button>
+      <button class="filter" type="button" data-filter="new-releases" aria-pressed="false">New Releases</button>
+      <button class="filter" type="button" data-filter="music-business" aria-pressed="false">Music Business &amp; Insights</button>
+      <button class="filter" type="button" data-filter="campaigns" aria-pressed="false">Campaigns &amp; Collaborations</button>
+      <button class="filter" type="button" data-filter="updates" aria-pressed="false">Winstinct Updates</button>
+    </div>
   </div>
 </section>
 
-<section class="band band-cream" style="padding-top:0" aria-label="Latest posts">
-  <div class="wrap card-grid">
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Releases</span><span>Oct 14, 2026</span></p><h3>Halo Wren's second album is out today</h3></a>
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-2.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Guides</span><span>Oct 7, 2026</span></p><h3>Five metadata mistakes that hide your release</h3></a>
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-3.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Product</span><span>Sep 30, 2026</span></p><h3>Winstinct Studio now shows playlist reach by city</h3></a>
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-4.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Industry</span><span>Sep 22, 2026</span></p><h3>What the new streaming royalty rules mean for small labels</h3></a>
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-group.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Company</span><span>Sep 15, 2026</span></p><h3>Meet the Seoul team</h3></a>
-    <a class="post-card" href="#"><figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Placeholder: post image" loading="lazy"></figure><p class="post-meta"><span class="cat">Releases</span><span>Sep 8, 2026</span></p><h3>Tidal Room celebrates 50 releases with a summer compilation</h3></a>
+<!-- Featured Story -->
+<section class="band band-cream" style="padding-top:0" aria-label="Featured Story">
+  <div class="wrap">
+    <article class="featured">
+      <figure class="ph" style="margin:0"><img src="assets/ph-group.svg" alt="Winstinct artist services"></figure>
+      <div class="stack">
+        <p class="post-meta"><span class="cat">Winstinct Updates</span><span>Latest Feature</span></p>
+        <h2 class="t-l">Built for Independent Music: How Winstinct Is Empowering Artist Ownership</h2>
+        <p class="body-copy muted">The music industry is changing. Artists want more control, better opportunities and partners who understand their vision. At Winstinct, we bring together music distribution, publishing, marketing and creative services to help independent artists build sustainable careers — on their own terms.</p>
+        <a class="link-arrow" href="#article-1">Read the perspective</a>
+      </div>
+    </article>
   </div>
 </section>
+
+<!-- Post Grid -->
+<section class="band band-cream" style="padding-top:0" aria-label="All Insights">
+  <div class="wrap card-grid">
+
+    <!-- Post 1 -->
+    <article class="post-card" data-cat="artist-stories" id="article-1">
+      <figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Artist Stories" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">Artist Stories</span><span>Feature</span></p>
+      <h3>Behind the Beat: How Independent Hip-Hop Creators Are Redefining Ownership</h3>
+      <p class="muted" style="font-size:0.95rem">Why modern hip-hop producers and lyricists are skipping traditional major label deals in favor of retaining their copyright and building long-term catalogue value.</p>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="post-card" data-cat="new-releases">
+      <figure class="ph" style="margin:0"><img src="assets/ph-2.svg" alt="New Releases" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">New Releases</span><span>Music</span></p>
+      <h3>Fresh Sounds: The Defining Independent Releases Shaping Emerging Culture This Month</h3>
+      <p class="muted" style="font-size:0.95rem">From UK drill and transatlantic trap to alternative Afro-fusion, we highlight the most impactful independent tracks moving audiences worldwide.</p>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="post-card" data-cat="music-business">
+      <figure class="ph" style="margin:0"><img src="assets/ph-3.svg" alt="Music Business Insights" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">Music Business &amp; Insights</span><span>Guide</span></p>
+      <h3>Rights, Reach &amp; Revenue: The Three Pillars of a Sustainable Music Career</h3>
+      <p class="muted" style="font-size:0.95rem">A breakdown of how independent artists can balance copyright protection, global platform reach across 150+ stores, and multi-stream monetisation.</p>
+    </article>
+
+    <!-- Post 4 -->
+    <article class="post-card" data-cat="campaigns">
+      <figure class="ph" style="margin:0"><img src="assets/ph-4.svg" alt="Campaigns & Collaborations" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">Campaigns &amp; Collaborations</span><span>Case Study</span></p>
+      <h3>Turn Music Into Moments: How Visual Content &amp; Short-Form Edits Drive Real Streams</h3>
+      <p class="muted" style="font-size:0.95rem">Behind the scenes of our creative campaigns: how official music videos, TikTok shorts and tailored podcast features build authentic artist identity.</p>
+    </article>
+
+    <!-- Post 5 -->
+    <article class="post-card" data-cat="updates">
+      <figure class="ph" style="margin:0"><img src="assets/ph-group.svg" alt="Winstinct Updates" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">Winstinct Updates</span><span>Company</span></p>
+      <h3>150+ Digital Platforms Worldwide: Expanding Reach, Reporting &amp; Content Protection</h3>
+      <p class="muted" style="font-size:0.95rem">Winstinct expands distribution partnerships and enhances automated audio fingerprinting to protect artist rights and monetize every play globally.</p>
+    </article>
+
+    <!-- Post 6 -->
+    <article class="post-card" data-cat="music-business">
+      <figure class="ph" style="margin:0"><img src="assets/ph-1.svg" alt="Publishing Royalties" loading="lazy"></figure>
+      <p class="post-meta"><span class="cat">Music Business &amp; Insights</span><span>Industry</span></p>
+      <h3>Publishing Administration Explained: Performance, Mechanical &amp; Sync Royalties</h3>
+      <p class="muted" style="font-size:0.95rem">How publishing royalties work, why thousands of independent artists leave money on the table, and how to claim every revenue stream while keeping copyright.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- Newsletter / CTA -->
+<section class="band band-orange" aria-labelledby="news-cta-title">
+  <div class="wrap cta-band">
+    <div>
+      <h2 id="news-cta-title" class="t-l">Stay Connected to the Scene.</h2>
+      <p class="lead" style="margin-top:12px">Receive stories, release announcements and music business insights directly from our team.</p>
+    </div>
+    <a class="btn btn-solid" href="contact.html">Get in Touch</a>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer band-ink">
   <div class="wrap">
     <div class="footer-top">
-      <ul class="footer-big">
-        <li><a href="contact.html">Careers</a></li>
-        <li><a href="about.html">Brand assets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div>
+        <p class="eyebrow" style="color:var(--orange);margin-bottom:14px">Our Core Services</p>
+        <ul class="footer-big">
+          <li><a href="services.html#distribution">Distribution</a></li>
+          <li><a href="services.html#publishing">Publishing</a></li>
+          <li><a href="services.html#marketing">Marketing</a></li>
+          <li><a href="services.html#content">Content</a></li>
+          <li><a href="services.html#artist-development">Artist Development</a></li>
+        </ul>
+      </div>
       <a class="to-top" href="#top" aria-label="Back to top">↑</a>
     </div>
     <div class="footer-bottom">
       <div class="footer-brand">
         <a class="logo" href="index.html" aria-label="Winstinct home">winstinct<span class="logo-dot" aria-hidden="true"></span></a>
-        <p class="tagline">Independent<br>by design</p>
+        <p class="tagline"><strong>Big W</strong><br>Independent Music.<br>Artist-First Partnerships.</p>
       </div>
       <span aria-hidden="true"></span>
       <ul class="legal">
-        <li><a href="#">Legal notice</a></li>
-        <li><a href="#">Privacy policy</a></li>
-        <li><a href="#">Winstinct Studio platform</a></li>
-        <li><a href="#">Our position on AI</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
       </ul>
       <ul class="social" aria-label="Social links">
         <li><a href="#" aria-label="Instagram">IG</a></li>
@@ -113,7 +191,6 @@
     </div>
   </div>
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
